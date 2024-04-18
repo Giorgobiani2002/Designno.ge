@@ -1,0 +1,866 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f7f7f7;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Global reset end */
+
+/* Root */
+
+:root {
+  --primary-color: black;
+  --text-color: rgb(255, 0, 0);
+}
+
+/* Header Start */
+
+body .header_container {
+  background-color: var(--primary-color);
+}
+
+.header_container .header_content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_content .logo {
+  width: 55px;
+  height: auto;
+}
+
+.navigation nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li a {
+  color: var(--text-color);
+}
+body {
+  font-family: "Jost", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+header {
+  max-width: 111rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 1.8rem;
+}
+.navbar-menu ul {
+  display: flex;
+}
+.navbar-menu ul li {
+  list-style-type: none;
+}
+.navbar-menu ul li a {
+  text-decoration: none;
+  margin-right: 4rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: rgba(51, 49, 54, 1);
+}
+.first-section {
+  width: 111rem;
+  height: 25.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./Group\ 6.png);
+  margin-top: 6.7rem;
+}
+.first-section h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+.first-section p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 2.4rem;
+}
+.second-section {
+  width: 110rem;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.2rem 3rem;
+}
+.card {
+  width: 35rem;
+  height: 47.8rem;
+  background-color: rgba(253, 243, 240, 1);
+  border-radius: 1.2rem;
+}
+.card div {
+  width: 28.6rem;
+  height: 9.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.2rem;
+}
+.card div h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5rem;
+  color: rgba(231, 129, 107, 1);
+  text-align: center;
+}
+.card div p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: rgba(51, 49, 54, 1);
+  margin-top: 1.6rem;
+}
+.third-section {
+  width: 111rem;
+  height: 30.8rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 16rem;
+}
+.section2-card2 {
+  width: 54.1rem;
+  background-image: url(./section2-mobie.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1-text {
+  text-align: center;
+}
+.card1-text h3 {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: white;
+}
+.card1-text h5 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 2rem;
+  letter-spacing: 0.5rem;
+}
+.section2-card3 {
+  width: 54.1rem;
+  background-image: url(./Bitmap50.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-section {
+  width: 111rem;
+  height: 29.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./section4background.png);
+  margin-top: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourth-div {
+  width: 45.9rem;
+  height: 17.4rem;
+}
+.fourth-div h3 {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: rgba(255, 255, 255, 1);
+}
+.fourth-div p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 2rem;
+}
+.btn2 {
+  width: 15.2rem;
+  height: 5.6rem;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.16rem;
+  color: rgba(51, 49, 54, 1);
+  border-radius: 1.2rem;
+}
+footer {
+  width: 100%;
+  height: 39.3rem;
+  background-color: rgba(29, 28, 30, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container {
+  width: 111rem;
+  height: 17.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-div {
+  max-width: 111rem;
+  height: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .navbar-menu ul li a {
+  color: white;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+.footer-div2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  align-items: flex-end;
+}
+.footer-div2 div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-div2 nav ul {
+  display: flex;
+}
+.footer-div2 nav ul li {
+  list-style-type: none;
+}
+.footer-div2 nav ul li a {
+  margin-right: 4rem;
+}
+.navbar-menu2 {
+  display: none;
+}
+.toggle {
+  display: none;
+}
+.section2-card2:hover {
+  filter: brightness(2);
+  transition: 1s;
+  cursor: pointer;
+}
+.section2-card3:hover {
+  filter: brightness(2);
+  transition: 1s;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  background-color: rgba(255, 173, 155, 1);
+}
+nav ul li a:hover {
+  border-bottom: 1px solid rgb(129, 99, 99);
+  transition: 2s;
+}
+.card:hover {
+  cursor: pointer;
+  transition: 2s;
+  background-color: rgb(200, 176, 171);
+  color: white;
+}
+@media screen and (min-width: 768px) and (max-width: 1135.2px) {
+  .first-section {
+    width: 69rem;
+    border-radius: 1.2rem;
+  }
+  .second-section {
+    width: 69rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 12rem;
+  }
+  .card {
+    display: flex;
+    width: 68.9rem;
+    height: 31rem;
+    align-items: center;
+  }
+  .third-section {
+    width: 69rem;
+    flex-direction: column;
+    height: 42rem;
+  }
+  .section2-card2 {
+    background-image: url(./Bitmap5.jpg);
+    width: 68.9rem;
+    height: 20rem;
+  }
+  .section2-card3 {
+    margin-top: 2.4rem;
+    width: 68.9rem;
+    height: 20rem;
+    background-image: url(./Bitmap9.png);
+  }
+  .fourth-section {
+    width: 69rem;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.2rem;
+    margin-top: 12rem;
+  }
+  .fourth-div p {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 500.1px) and (max-width: 613px) {
+  html {
+    font-size: 6.7px;
+  }
+  .first-section {
+    width: 69rem;
+    border-radius: 1.2rem;
+  }
+  .second-section {
+    width: 69rem;
+    grid-template-columns: repeat(1, 1fr);
+    height: 101rem;
+    margin-top: 12rem;
+  }
+  .card {
+    width: 68.9rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .third-section {
+    width: 69rem;
+    margin-top: 12rem;
+    flex-direction: column;
+    height: 42rem;
+  }
+  .section2-card2 {
+    background-image: url(./Bitmap5.jpg);
+    width: 68.9rem;
+    height: 20rem;
+    border-radius: 1.2rem;
+  }
+  .section2-card3 {
+    margin-top: 2.4rem;
+    width: 68.9rem;
+    height: 20rem;
+    background-image: url(./Bitmap9.jpg);
+    border-radius: 1.2rem;
+  }
+  .fourth-section {
+    width: 69rem;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.2rem;
+    margin-top: 12rem;
+  }
+  .fourth-div p {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 613.1px) and (max-width: 767.9px) {
+  html {
+    font-size: 8px;
+  }
+  .first-section {
+    width: 69rem;
+    border-radius: 1.2rem;
+  }
+  .second-section {
+    width: 69rem;
+    grid-template-columns: repeat(1, 1fr);
+    height: 101rem;
+    margin-top: 12rem;
+  }
+  .card {
+    width: 68.9rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .third-section {
+    width: 69rem;
+    margin-top: 12rem;
+    flex-direction: column;
+    height: 42rem;
+  }
+  .section2-card2 {
+    background-image: url(./Bitmap5.jpg);
+    width: 68.9rem;
+    height: 20rem;
+  }
+  .section2-card3 {
+    margin-top: 2.4rem;
+    width: 68.9rem;
+    height: 20rem;
+    background-image: url(./Bitmap9.jpg);
+  }
+  .fourth-section {
+    width: 69rem;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.2rem;
+  }
+  .fourth-div p {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 390.4px) and (max-width: 500px) {
+  html {
+    font-size: 9px;
+  }
+  header {
+    width: 37.5rem;
+  }
+  .navbar-menu2 {
+    height: 23.5rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: rgb(85, 81, 81);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    display: none;
+    flex-direction: row-reverse;
+  }
+  .navbar-menu2 ul li a {
+    color: white;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  
+  .navbar-menu2 ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .close {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    
+  }
+  .toggle {
+    display: initial;
+    cursor: pointer;
+  }
+  .first-section {
+    width: 100%;
+    border-radius: 1.2rem;
+    height: 32rem;
+    background-color: rgba(231, 129, 107, 1);
+  }
+  .first-section h2 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  .second-section {
+    width: 32.7rem;
+    height: 145.8rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5rem;
+  }
+  .second-section .card {
+    width: 32.7rem;
+    overflow: hidden;
+  }
+  .third-section {
+    width: 32.7rem;
+    height: 52.4rem;
+    flex-direction: column;
+    margin-top: 9rem;
+  }
+  .section2-card2 {
+    width: 32.7rem;
+    height: 25rem;
+    border-radius: 1.2rem;
+  }
+  .section2-card3 {
+    width: 32.7rem;
+    height: 25rem;
+    border-radius: 1.2rem;
+  }
+  .fourth-section {
+    width: 32.7rem;
+    height: 37.9rem;
+    flex-direction: column;
+    background-color: rgba(231, 129, 107, 1);
+    border-radius: 1.2rem;
+    margin-top: 9rem;
+  }
+  .fourth-div {
+    width: 27.9rem;
+    height: 11.3rem;
+  }
+  footer {
+    height: 58.5rem;
+  }
+  .footer-container {
+    width: 32.7rem;
+    height: 47.8rem;
+  }
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .navbar-menu ul li a {
+    margin-right: 0rem;
+  }
+  footer .navbar-menu ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  footer .navbar-menu ul li {
+    padding-bottom: 3rem;
+  }
+  .footer-div2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-div2 div {
+    margin-bottom: 3rem;
+  }
+  .footer-div2 nav ul li a {
+    margin-right: 3rem;
+  }
+  header .navbar-menu {
+    display: none;
+  }
+  .card {
+    height: 49.8rem;
+  }
+}
+@media screen and (min-width:320px) and (max-width:390.3px) {
+  html {
+    font-size: 8px;
+  }
+  header {
+    width: 37.5rem;
+  }
+  .navbar-menu2 {
+    height: 23.5rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-color: rgb(85, 81, 81);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    display: none;
+    flex-direction: row-reverse;
+  }
+  .navbar-menu2 ul li a {
+    color: white;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  
+  .navbar-menu2 ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .close {
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    
+  }
+  .toggle {
+    display: initial;
+    cursor: pointer;
+  }
+  .first-section {
+    width: 100%;
+    border-radius: 1.2rem;
+    height: 32rem;
+    background-color: rgba(231, 129, 107, 1);
+  }
+  .first-section h2 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  .second-section {
+    width: 32.7rem;
+    height: 162.8rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5rem;
+  }
+  .second-section .card {
+    width: 32.7rem;
+    overflow: hidden;
+  }
+  .third-section {
+    width: 32.7rem;
+    height: 52.4rem;
+    flex-direction: column;
+    margin-top: 9rem;
+  }
+  .section2-card2 {
+    width: 32.7rem;
+    height: 25rem;
+    border-radius: 1.2rem;
+  }
+  .section2-card3 {
+    width: 32.7rem;
+    height: 25rem;
+    border-radius: 1.2rem;
+  }
+  .fourth-section {
+    width: 32.7rem;
+    height: 37.9rem;
+    flex-direction: column;
+    background-color: rgba(231, 129, 107, 1);
+    border-radius: 1.2rem;
+    margin-top: 9rem;
+  }
+  .fourth-div {
+    width: 27.9rem;
+    height: 11.3rem;
+  }
+  footer {
+    height: 58.5rem;
+  }
+  .footer-container {
+    width: 32.7rem;
+    height: 47.8rem;
+  }
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .navbar-menu ul li a {
+    margin-right: 0rem;
+  }
+  footer .navbar-menu ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  footer .navbar-menu ul li {
+    padding-bottom: 3rem;
+  }
+  .footer-div2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-div2 div {
+    margin-bottom: 3rem;
+  }
+  .footer-div2 nav ul li a {
+    margin-right: 3rem;
+  }
+  header .navbar-menu {
+    display: none;
+  }
+  .card {
+    height: 53.8rem;
+  }
+  
+}
